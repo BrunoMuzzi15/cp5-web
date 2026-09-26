@@ -82,7 +82,7 @@ export default function MenuPreview() {
           <div>
             <h2 className="font-display font-extrabold text-3xl md:text-4xl mb-3">Cardápio em destaque</h2>
             <p className="text-cream/70 max-w-md">
-              Pratos populares em tempo real, buscados via <code className="text-citrus">fetch</code> na TheMealDB.
+              Pratos populares em tempo real, buscados via fetch na TheMealDB.
             </p>
           </div>
 
