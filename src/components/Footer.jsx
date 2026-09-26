@@ -1,4 +1,4 @@
-import { Instagram, Twitter, Facebook, UtensilsCrossed } from 'lucide-react'
+import { Instagram,Facebook, UtensilsCrossed } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -13,8 +13,8 @@ export default function Footer() {
           <a href="#" aria-label="Instagram" className="hover:text-citrus transition-colors">
             <Instagram size={18} />
           </a>
-          <a href="#" aria-label="Twitter" className="hover:text-citrus transition-colors">
-            <Twitter size={18} />
+          <a href="#" className="flex items-center gap-2">
+        <span className="text-xl font-bold">𝕏</span>
           </a>
           <a href="#" aria-label="Facebook" className="hover:text-citrus transition-colors">
             <Facebook size={18} />

@@ -19,7 +19,7 @@ useEffect(() => {
     return () => window.removeEventListener('scroll', onScroll)
 }, [])
 
-  return (
+return (
     <header
     className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${
         scrolled ? 'bg-ink/90 backdrop-blur-md border-b border-white/10' : 'bg-transparent'

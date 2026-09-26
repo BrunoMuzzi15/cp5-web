@@ -3,13 +3,13 @@ const TESTIMONIALS = [
     name: 'Marina Alves',
     role: 'Cliente desde 2023',
     quote:
-      'Peço quase todo dia no almoço. O rastreamento em tempo real é o que mais uso — sei exatamente quando descer para buscar.',
+      'Peço quase todo dia no almoço. O rastreamento em tempo real é o que mais uso, sei exatamente quando descer para buscar.',
   },
   {
     name: 'Rafael Nogueira',
-    role: 'Dono da Trattoria Bella Vita',
+    role: 'cliente desde 2021',
     quote:
-      'Desde que entramos no GourmetOn, os pedidos via app já são um terço do nosso faturamento no delivery.',
+      'Desde que entramos no GourmetOn, os pedidos via app chegam super rápidos.',
   },
   {
     name: 'Juliana Prado',
