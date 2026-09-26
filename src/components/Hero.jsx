@@ -15,7 +15,7 @@ export default function Hero() {
             <span className="text-citrus">Repita.</span>
           </h1>
           <p className="text-cream/70 text-lg max-w-md mb-8">
-            O GourmetOn conecta você aos melhores restaurantes da cidade em poucos toques —
+            O GourmetOn conecta você aos melhores restaurantes da cidade em poucos toques,
             com busca inteligente, filtros por tipo de prato e entrega rastreada de ponta a ponta.
           </p>
           <div className="flex flex-wrap items-center gap-4">
@@ -41,35 +41,6 @@ export default function Hero() {
               ))}
             </div>
             4,8 de avaliação média entre mais de 12 mil pedidos
-          </div>
-        </div>
-
-        <div className="relative mx-auto w-full max-w-sm">
-          <div className="rounded-3xl bg-paper text-ink p-6 rotate-2 shadow-2xl shadow-black/40">
-            <p className="font-display font-bold text-xl mb-1">Comanda #0842</p>
-            <p className="text-ink/60 text-sm mb-4">Trattoria Bella Vita</p>
-            <ul className="space-y-3 text-sm">
-              <li className="flex justify-between border-b border-ink/10 pb-2">
-                <span>Risoto de funghi</span>
-                <span className="font-semibold">R$ 42</span>
-              </li>
-              <li className="flex justify-between border-b border-ink/10 pb-2">
-                <span>Tiramisù</span>
-                <span className="font-semibold">R$ 18</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Água com gás</span>
-                <span className="font-semibold">R$ 7</span>
-              </li>
-            </ul>
-            <div className="mt-4 pt-4 border-t border-dashed border-ink/20 flex justify-between font-display font-bold">
-              <span>Total</span>
-              <span>R$ 67</span>
-            </div>
-          </div>
-          <div className="absolute -bottom-6 -left-6 rounded-2xl bg-ink2 border border-cream/10 px-5 py-3 -rotate-3 shadow-xl">
-            <p className="text-xs text-cream/50">Chegada estimada</p>
-            <p className="font-display font-bold text-citrus">23 min</p>
           </div>
         </div>
       </div>

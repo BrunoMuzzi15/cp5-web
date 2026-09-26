@@ -1,14 +1,45 @@
 import { useEffect, useState } from 'react'
 import { Loader2, SearchX } from 'lucide-react'
 
-// Categorias exibidas como filtros. Usamos a TheMealDB (gratuita, sem chave de API)
-// para popular o cardápio com dados reais via fetch + JSON.
+
 const CATEGORIES = [
   { label: 'Massas', value: 'Pasta' },
   { label: 'Frango', value: 'Chicken' },
   { label: 'Sobremesas', value: 'Dessert' },
   { label: 'Vegetariano', value: 'Vegetarian' },
 ]
+
+
+const CUSTOM_NAMES = {
+  'Chilli prawn linguine': 'Macarrão com Camarão',
+  'Fettuccine Alfredo': 'Fettuccine ao molho branco',
+  'Fettucine alfredo': 'Fettuccine com queijo',
+  'Grilled Mac and Cheese Sandwich': 'Sanduíche de Mac and Cheese',
+  'Lasagna Sandwiches': 'Sanduíche',
+  'Lasagne': 'Lasanha',
+  '15-minute chicken & halloumi burgers': 'Hambúrguer de Frango',
+  'Ayam Percik': 'Frango Assado',
+  'Belgian Waterzooi Chicken': 'Frango com Legumes',
+  'Bengali Chicken Curry with Potatoes': 'Frango com Batata',
+  'Brown Stew Chicken': 'Frango ao molho',
+  'Chick-Fil-A Sandwich': 'Sanduíche de Frango',
+  'Æbleskiver': 'Bolinho com doce de leite',
+  'Anzac biscuits': 'Biscoito de aveia',
+  'Apam balik': 'Panqueca com recheio',
+  'Apple & Blackberry Crumble': 'Torta de Maçã',
+  'Apple cake': 'Bolo de Maçã',
+  'Air fryer patatas bravas': 'Batatas Cozidas',
+  'Algerian Flafla (Bell Pepper Salad)': 'Salada de Pimentão',
+  'Aubergine & hummus grills': 'Legumes Grelhados',
+  'Aubergine couscous salad': 'Salada de Berinjela',
+  'Avocado dip with new potatoes': 'Guacamole com Batata',
+  'Baingan Bharta': 'Berinjela temperada',
+
+}
+
+function displayName(meal) {
+  return CUSTOM_NAMES[meal.strMeal] || meal.strMeal
+}
 
 export default function MenuPreview() {
   const [category, setCategory] = useState(CATEGORIES[0].value)
@@ -55,7 +86,7 @@ export default function MenuPreview() {
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-2" id="funcionalidades">
+          <div className="flex flex-wrap gap-2">
             {CATEGORIES.map((c) => (
               <button
                 key={c.value}
@@ -95,12 +126,12 @@ export default function MenuPreview() {
               >
                 <img
                   src={meal.strMealThumb}
-                  alt={meal.strMeal}
+                  alt={displayName(meal)}
                   className="w-full h-40 object-cover"
                   loading="lazy"
                 />
                 <div className="p-4">
-                  <p className="font-display font-bold">{meal.strMeal}</p>
+                  <p className="font-display font-bold">{displayName(meal)}</p>
                   <p className="text-cream/50 text-xs mt-1">Disponível para entrega hoje</p>
                 </div>
               </div>
@@ -111,4 +142,3 @@ export default function MenuPreview() {
     </section>
   )
 }
-

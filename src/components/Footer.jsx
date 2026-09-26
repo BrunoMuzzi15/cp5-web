@@ -30,7 +30,7 @@ export default function Footer() {
       </div>
 
       <p className="text-center text-cream/30 text-xs mt-8">
-        © {new Date().getFullYear()} GourmetOn. Projeto acadêmico — Check-Point 05, Web Development with JS.
+        © {new Date().getFullYear()} GourmetOn.
       </p>
     </footer>
   )
