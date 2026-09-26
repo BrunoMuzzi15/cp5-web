@@ -67,7 +67,7 @@ npm run preview
 ## Uso de IA no projeto
 
 Estrutura do projeto, componentes React, integração com a API e estilização com
-Tailwind foram desenvolvidos com apoio do Claude (Anthropic).
+Tailwind foram desenvolvidos com apoio do Claude.
 
 ## Responsividade
 

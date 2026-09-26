@@ -1,5 +1,23 @@
 import { Zap, Store, Wallet } from 'lucide-react'
 
+const BENEFITS = [
+  {
+    icon: Zap,
+    title: 'Entrega rápida',
+    text: 'Roteirização inteligente que prioriza os entregadores mais próximos do restaurante.',
+  },
+  {
+    icon: Store,
+    title: 'Variedade de restaurantes',
+    text: 'De marmitas fit a alta gastronomia, mais de 3 mil parceiros cadastrados.',
+  },
+  {
+    icon: Wallet,
+    title: 'Pagamento fácil',
+    text: 'Pix, cartão ou saldo em app, com checkout em um único passo.',
+  },
+]
+
 export default function About() {
   return (
     <section id="sobre" className="px-6 py-20 bg-ink2">
